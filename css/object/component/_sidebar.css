@@ -1,0 +1,118 @@
+/*-------------------------------------
+//サイドバー
+--------------------------------------*/
+
+.sidebar{
+  grid-area: sidebar;
+  background-color: var(--color-white-bg);
+  border-radius: var(--border-radius-10);
+  margin: 10px;
+  padding: 10px;
+}
+
+.sidebar .sidebar__nav{
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.sidebar__production{
+  margin-bottom: 10px;
+}
+
+.sidebar__production-subtitle{
+  font-size: .7rem;
+  color: var(--color-whitegray-text);
+}
+
+.sidebar__production-heading{
+  font-size: 1rem;
+  color: var(--color-whitegray-text);
+  line-height: var(--line-height-XS);
+}
+
+@media (max-width: 767px){
+
+  .sidebar{
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .sidebar .sidebar__nav{
+    margin: 0px auto;
+    box-sizing: border-box;
+  }
+
+  .sidebar__production{
+    margin-bottom: 0px;
+  }
+
+  .sidebar__production-title{
+    display: none;
+  }
+}
+
+
+/*-------------------------------------
+//フィルター部分
+--------------------------------------*/
+
+.sidebar__production-option{
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* サイドバーカテゴリーごとにクリックすると「active-btn」「hidden-btn」が追加される */
+.sidebar__filter-btn{
+  color: var(--color-gray-text);
+  background-color: var(--color-white-bg);
+  padding: 5px 10px 5px 5px;
+  border-radius: var(--border-radius-5);
+  transition: all .3s;
+  width: 100%;
+}
+
+.sidebar__filter-btn.active-btn{
+  color: var(--color-white-text);
+  background-color: var(--color-blue-bg);
+}
+.sidebar__filter-btn.hidden-btn{
+  color: var(--color-gray-text);
+}
+/* サイドバーカテゴリーをホバーする */
+.sidebar__filter-btn.hidden-btn:hover{
+  background-color: var(--color-hover-bg);
+}
+
+.sidebar__filter-icon{
+  width: 25px;
+  height: 25px;
+}
+
+.sidebar__filter-label{
+  font-size: .8rem;
+}
+
+
+@media (max-width: 767px){
+  .sidebar__production-option{
+    display: inline-block;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  /* サイドバーカテゴリーごとにクリックすると「active-btn」「hidden-btn」が追加される */
+.sidebar__filter-btn{
+  padding: 5px 0;
+  border-radius: var(--border-radius-0);
+}
+
+.sidebar__filter-label{
+  font-size: .5rem;
+  margin-top: 2px;
+}
+}

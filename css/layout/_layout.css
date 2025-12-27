@@ -1,0 +1,35 @@
+/*-------------------------------------
+//ダッシュボード　グリッド
+--------------------------------------*/
+.grid__home-container{
+  display: grid;
+  grid-template-areas: "sidebar main";
+  grid-template-columns: 200px 1fr; /* sidebarは固定の200px、mainは残りの領域全部使用 */
+  grid-template-rows: 1fr;
+  height: 100vh;
+  background-color:var(--color-gray-bg);
+}
+
+@media (max-width: 767px){
+.grid__home-container{
+  grid-template-areas:"sidebar" "main"; /* ← メイン先、サイドバー下 */
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  height:auto;  /* PCの場合は画面いっぱいの高さで設定していたが、SPの場合はコンテンツの内容に応じて高さを調節するためauto */
+}
+}
+
+
+/*-------------------------------------
+//詳細ページ　グリッド
+--------------------------------------*/
+.grid__about-container{
+  display: grid;
+  grid-template-areas:"header" "about";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+
+

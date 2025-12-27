@@ -1,0 +1,32 @@
+:root{
+  /* フォントカラー */
+  --color-blue-text: #0066cc;
+  --color-white-text: #fff;
+  --color-gray-text: #3e3e3e;
+  --color-whitegray-text: #888888;
+
+  /* 文字間 */
+  --letter-spacing-XS: .8px;
+  --letter-spacing-S: 1.3px;
+  --letter-spacing-M: 1.6px;
+  --letter-spacing-L: 2px;
+
+  /* 文字間 */
+  --line-height-XS: 1;
+  --line-height-S: 1.2;
+  --line-height-M: 1.5;
+  --line-height-L: 1.8;
+
+  /* 背景色 */
+  --color-white-bg: #fff;
+  --color-gray-bg: #f8f8f8;
+  --color-blue-bg: #0066cc;
+  --color-hover-bg: #ededed; /* ホバー */
+
+  /* 角丸 */
+  --border-radius-0: 0px;
+  --border-radius-5: 5px;
+  --border-radius-10: 10px;
+  --border-radius-20: 20px;
+  --border-radius-30: 30px;
+}

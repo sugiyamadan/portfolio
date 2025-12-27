@@ -1,0 +1,56 @@
+
+/*-------------------------------------
+//制作物一覧
+--------------------------------------*/
+.product{
+  overflow-y: auto;
+}
+
+.product__section-title{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: var(--color-blue-text);
+}
+.product__section-title:first-of-type{
+  margin-top: 20px;
+}
+
+.product__card{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.product__card-link{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.product__card-img{
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-20);
+  transition: all .3s;
+  transform: translateY(0);
+}
+.product__card-img:hover{
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0, 5%);
+  transform: translateY(-10px);
+}
+
+.product__card-title{
+  letter-spacing: var(--letter-spacing-S);
+  font-size: .9rem;
+  margin: 10px 0 5px;
+}
+
+.product__card-label,.product__card-text,.product__card-meta{
+  letter-spacing: var(--letter-spacing-S);
+  font-size: .7rem;
+  margin-bottom: 1px;
+  color: var(--color-whitegray-text);
+}
