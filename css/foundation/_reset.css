@@ -23,13 +23,14 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   color: #3e3e3e;
-  background-color: #fff;
+  background-color:var(--color-gray-bg);
 }
 
 /* 4. 画像・動画などのメディア要素の扱い */
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 

@@ -1,3 +1,233 @@
 /*-------------------------------------
 //詳細ページ
 --------------------------------------*/
+
+.about{
+    grid-area: main;
+    margin: 10px;
+    letter-spacing: var(--letter-spacing-S);
+}
+
+/* --- 制作物画像 ----*/
+
+/* バナー制作物画像の場合 */
+.about__product-figure-img{
+    border-radius: var( --border-radius-10);
+}
+
+/* ポスター/チラシ制作物画像の場合*/
+.about__product-figure-poster-img{
+  border-radius: var( --border-radius-10);
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+/* Web/LPサイト制作物画像の場合 */
+
+/* SPサイズの時は横スクロール表示する */
+.about__product-figure-SP-scroll{
+  max-width: 100%;
+}
+.about__product-figure-SP-scroll-img{
+  border-radius: var( --border-radius-10);
+  max-width: 350px;
+  margin: 0 auto;
+}
+/* SP・PCサイズでも横スクロール表示する */
+.about__product-figure-PC-scroll{
+  overflow-x: scroll;
+  max-width: 100%;
+}
+.about__product-figure-PC-scroll-img{
+  border-radius: var( --border-radius-10);
+  max-width: 350px;
+  margin: 0 5px;
+}
+
+/*アプリUI制作物画像の場合 */
+.about__product-figure-ui-img{
+  border-radius: var( --border-radius-10);
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+/* Before Afterのテキスト */
+.about__product-figure-ui-text{
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: var( --border-radius-5);
+  font-size: .8rem;
+  margin-bottom: 8px;
+}
+
+.about__product-before{
+  color: #fff;
+  background: #858585;
+}
+.about__product-after{
+  color: #fff;
+  background: #18a963;
+}
+
+
+/* 制作物のタイトル */
+.about__product-title{
+    font-size: 1.3rem;
+}
+
+.about__product-title-block{
+   margin: 20px 0px 40px;
+}
+
+
+/* 矢印 */
+.about__product-figure-arrow {
+  width: 0;
+  height: 0;
+  margin: 5%;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid #c6c6c6;
+}
+
+
+
+@media (max-width: 767px){
+
+/* Web/LPサイト制作物画像の場合 */
+/* SPサイズの時は横スクロール表示する */
+.about__product-figure-SP-scroll{
+  overflow-x: scroll;
+}
+.about__product-figure-SP-scroll-img{
+  margin: 0 5px;
+}
+
+/* 矢印 */
+.about__product-figure-arrow {
+  margin: 3%;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid #c6c6c6;
+}
+}
+
+
+
+/*-------------------------------------
+//設計プロセス
+--------------------------------------*/
+
+/* タイトル */
+.about__product-design-title {
+font-size: 1rem;
+margin-bottom: 10px;
+}
+
+/* プロセスごとの余白調整 */
+.about__product-design-list {
+gap: 10px;
+}
+  
+
+
+/* 共通ブロック */
+.about__product-design {
+padding: 10px;
+border-radius: var( --border-radius-5);
+color: #fff;
+}
+.about__product-design:last-of-type {
+    margin-bottom: 100px;
+}
+
+/* ラベル */
+.about__product-label {
+font-size: .9rem;
+margin-bottom:8px;
+}
+
+/* 説明文 */
+.about__product-description-list{
+  list-style-position: inside;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.about__product-description-dic {
+margin: 0;
+line-height: var(--line-height-M);
+font-size: .8rem;
+list-style: disc;
+margin-bottom: 5px;
+}
+
+
+/*-------------------------------------
+//カラーバリエーション
+--------------------------------------*/
+/* 背景色 */
+
+/* 課題カラー */
+.about__product-bg--phase-1 {
+    background-color: var(--color-white-bg);
+    border: solid 1px #8D8D8D;
+  }
+  
+  .about__product-bg--phase-2 {
+    background-color: var(--color-white-bg);
+    border: solid 1px #00ACCB;
+  }
+  
+  .about__product-bg--phase-3 {
+    background-color: var(--color-white-bg);
+    border: solid 1px #0085cc;
+  }
+  
+  .about__product-bg--phase-4 {
+    background-color: var(--color-white-bg);
+    border: solid 1px #0066cc;
+  }
+  
+  .about__product-bg--result {
+    background-color: var(--color-white-bg);
+    border: solid 1px #FF7600;
+  }
+  
+
+/* フォントカラー */
+
+/* 課題カラー */
+.about__product-text--phase-1 {
+    color: #8D8D8D;
+}
+
+.about__product-text--phase-2 {
+    color: #00ACCB;
+}
+
+.about__product-text--phase-3 {
+    color: #0085CC;
+}
+
+.about__product-text--phase-4 {
+    color: #0066cc;
+}
+
+.about__product-text--result {
+    color: #FF7600;
+}
+
+
+/*-------------------------------------
+//矢印
+--------------------------------------*/
+  .about__product-design-arrow {
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #c6c6c6;
+  }

@@ -3,19 +3,21 @@
 //制作物一覧
 --------------------------------------*/
 .product{
+  grid-area: main;
+  margin: 10px;
   overflow-y: auto;
 }
 
 .product__section-title{
   margin-top: 40px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-bottom: 10px;
   color: var(--color-blue-text);
 }
 .product__section-title:first-of-type{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
+/* 正方形サイズ ギャラリー */
 .product__card{
   grid-area: main;
   display: grid;
@@ -23,9 +25,17 @@
   gap: 30px;
 }
 
+/* バナーサイズ ギャラリー */
+.product__card-banner{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
+}
+
 .product__card-link{
   display: block;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   height: auto;
 }
@@ -48,9 +58,14 @@
   margin: 10px 0 5px;
 }
 
-.product__card-label,.product__card-text,.product__card-meta{
+.product__card-info-block{
+  margin-bottom: 5px;
+}
+
+.product__card-label,.product__card-text{
   letter-spacing: var(--letter-spacing-S);
   font-size: .7rem;
   margin-bottom: 1px;
   color: var(--color-whitegray-text);
 }
+

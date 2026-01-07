@@ -7,7 +7,6 @@
   grid-template-columns: 200px 1fr; /* sidebarは固定の200px、mainは残りの領域全部使用 */
   grid-template-rows: 1fr;
   height: 100vh;
-  background-color:var(--color-gray-bg);
 }
 
 @media (max-width: 767px){
@@ -20,16 +19,6 @@
 }
 
 
-/*-------------------------------------
-//詳細ページ　グリッド
---------------------------------------*/
-.grid__about-container{
-  display: grid;
-  grid-template-areas:"header" "about";
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
-  height: 100vh;
-}
 
 
 

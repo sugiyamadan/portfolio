@@ -59,3 +59,16 @@ function categoryTab(){
 }
 
 categoryTab();
+
+
+// 詳細ページに遷移した場合、そのリンク先のURLに「category = 〇〇」と語尾に付く
+document.querySelectorAll(".product__card-link").forEach(a => {
+a.addEventListener("click", (e) => {
+    const current = new URLSearchParams(location.search).get("category");
+    if (!current) return; // 何も選ばれてないならそのまま
+
+    const url = new URL(a.href, location.origin);
+    url.searchParams.set("category", current);
+    a.href = url.toString();
+});
+});
