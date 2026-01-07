@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPOBY リワード一覧画面</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/foundation/_reset.css">
+  <link rel="stylesheet" href="../../css/foundation/_variables.css">
+  <link rel="stylesheet" href="../../css/foundation/_base.css">
+  <link rel="stylesheet" href="../../css/layout/_layout.css">
+  <link rel="stylesheet" href="../../css/object/component/_sidebar.css">
+  <link rel="stylesheet" href="../../css/object/utility/_utility.css">
+  <link rel="stylesheet" href="../../css/object/component/_about.css">
+
+   <!-- Google Fonts 読み込み -->
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="grid__home-container">
+
+    <!-- ナビゲーション -->
+    <nav class="sidebar">
+
+      <ul class="sidebar__nav">
+        <!-- 制作物 -->
+        <li class="sidebar__production">
+          <div class="sidebar__production-title">
+            <small class="sidebar__production-subtitle">production</small>
+            <h2 class="sidebar__production-heading">制作物</h2>
+          </div>
+        </li>
+
+        <!-- 制作物カテゴリー -->
+        <li class="sidebar__filter-option u-flex-sp u-justify-around-sp">
+          
+          <!-- ポスター/チラシ -->
+          <div class="sidebar__production-option">
+            <a href="file:///Users/sugiyamadaiki/Desktop/portfolio/index.html?category=graphic">
+            <button class="sidebar__filter-btn" data-category="graphic">
+              <div class="u-flex u-items-center u-direction-column-sp">
+                <svg class="sidebar__filter-icon" viewBox="0 0 48 48" aria-hidden="true">
+                  <rect x="12" y="4" width="24" height="40" rx="3"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="12" y1="36" x2="36" y2="36"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="23" y1="40" x2="25" y2="40"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="22" y1="8" x2="26" y2="8"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="sidebar__filter-label">ポスター/チラシ</span>
+              </div>
+            </button>
+          </a>
+          </div >
+
+
+          <!-- バナー/広告 -->
+          <div class="sidebar__production-option">
+            <a href="file:///Users/sugiyamadaiki/Desktop/portfolio/index.html?category=banner">
+            <button class="sidebar__filter-btn" data-category="banner">
+              <div class="u-flex u-items-center u-direction-column-sp">
+                <svg class="sidebar__filter-icon" viewBox="0 0 48 48" aria-hidden="true">
+                  <rect x="12" y="4" width="24" height="40" rx="3"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="12" y1="36" x2="36" y2="36"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="23" y1="40" x2="25" y2="40"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="22" y1="8" x2="26" y2="8"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="sidebar__filter-label">バナー/広告</span>
+              </div>
+            </button>
+          </a>
+          </div >
+          
+
+          <!-- UIデザイン -->
+          <div class="sidebar__production-option">
+            <a href="file:///Users/sugiyamadaiki/Desktop/portfolio/index.html?category=ui">
+            <button class="sidebar__filter-btn" data-category="ui">
+              <div class="u-flex u-items-center u-direction-column-sp">
+                <svg class="sidebar__filter-icon" viewBox="0 0 48 48" aria-hidden="true">
+                  <rect x="12" y="4" width="24" height="40" rx="3"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="12" y1="36" x2="36" y2="36"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="23" y1="40" x2="25" y2="40"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="22" y1="8" x2="26" y2="8"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="sidebar__filter-label">アプリUI</span>
+              </div>
+            </button>
+          </a>
+          </div >
+            
+          <!-- Webデザイン -->
+          <div class="sidebar__production-option">
+            <a href="file:///Users/sugiyamadaiki/Desktop/portfolio/index.html?category=web">
+            <button class="sidebar__filter-btn" data-category="web">
+              <div class="u-flex u-items-center u-direction-column-sp">
+                <svg class="sidebar__filter-icon" viewBox="0 0 48 48" aria-hidden="true">
+                  <rect x="12" y="4" width="24" height="40" rx="3"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="12" y1="36" x2="36" y2="36"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="23" y1="40" x2="25" y2="40"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="22" y1="8" x2="26" y2="8"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="sidebar__filter-label">LP/Webサイト</span>
+              </div>
+            </button>
+          </a>
+          </div >
+
+        </li>
+      </ul>
+    </nav>
+
+    <main class="about">
+
+      <article class="about__product">
+        <div>
+          <!-- 制作物画像 -->
+          <figure class="u-flex u-items-center u-justify-center">
+            <div>
+              <p class="about__product-figure-ui-text about__product-before">Before</p>
+              <img src="../../img/product/UI/UI_sponsorView_before.png" alt="SPOBY リワード一覧画面" class="about__product-figure-ui-img">
+            </div>
+              <div class="about__product-figure-arrow" aria-hidden="true"></div>
+            <div>
+              <p class="about__product-figure-ui-text about__product-after">After</p>
+              <img src="../../img/product/UI/UI_sponsorView_after.png" alt="SPOBY リワード一覧画面" class="about__product-figure-ui-img">
+            </div>
+          </figure>
+        </div>
+
+        <!-- 制作物タイトル -->
+        <div class="about__product-title-block">
+          <h1 class="about__product-title">SPOBY リワード一覧画面</h1>
+        </div>
+
+        <!-- 制作背景・意図 -->
+        <h3 class="about__product-design-title">制作背景・意図</h3>
+        <dl class="about__product-design-list u-flex u-direction-column">
+
+          <!-- 概要 -->
+          <div class="about__product-design about__product-bg--phase-1">
+            <dt class="about__product-label about__product-text--phase-1">【概要】</dt>
+            <dd class="about__product-description about__product-text--phase-1">
+              <ul class="about__product-description-list">
+                <li class="about__product-description-dic">制作物種別 : 採用サイト（Webサイト）</li>
+                <li class="about__product-description-dic">対象ページ : 募集職種ページ</li>
+                <li class="about__product-description-dic">サイト内容 : 募集職種一覧/職種詳細情報/応募フォーム</li>
+                <li class="about__product-description-dic">アプリ（SPOBY）について : <br>「SPOBY」は人の活動による脱炭素・健康増進を実現するアプリです。ユーザーはアプリを利用して活動を行うことでポイントを獲得でき、貯まったポイントはアプリ内に掲載されている様々なリワードと頑張ったご褒美として交換・獲得することができます。</li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="about__product-design-arrow" aria-hidden="true"></div>
+
+          <!-- 制作目的 -->
+          <div class="about__product-design about__product-bg--phase-2">
+            <dt class="about__product-label about__product-text--phase-2">【制作目的】</dt>
+            <dd class="about__product-description about__product-text--phase-2">
+              <ul class="about__product-description-list">
+                <li class="about__product-description-dic">なぜその職種を募集しているのかが正しく伝わるよう、事業内容や募集背景を整理し、情報として明確に提示しています。さらに、職種ごとに具体的な業務内容や役割を記載することで、応募前の理解を深め、入社後のミスマッチを防ぐことを狙いとしています。</li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="about__product-design-arrow" aria-hidden="true"></div>
+
+          <!-- 制作時に重視したポイント -->
+          <div class="about__product-design about__product-bg--phase-3">
+            <dt class="about__product-label about__product-text--phase-3">【制作時に重視したポイント】</dt>
+            <dd class="about__product-description about__product-text--phase-3">
+              <ul class="about__product-description-list">
+                <li class="about__product-description-dic">閲覧中のどのタイミングからでも応募行動に移れるよう、画面右下に常時表示される「応募はこちら」ボタンを配置し、応募フォームへの導線を明確に設計しました。また、各職種ページには実際に該当職種で働く現場社員の写真を使用し、業務内容だけでなく、働く環境や雰囲気が具体的にイメージできるよう配慮しています。加えて、情報量が多くなりがちな採用ページにおいても視認性を損なわないよう、装飾を抑えたシンプルなUIとし、ブランドカラーである青を基調に情報を整理しました。</li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="about__product-design-arrow" aria-hidden="true"></div>
+
+          <!-- デザイン上の工夫点 -->
+          <div class="about__product-design about__product-bg--phase-4">
+            <dt class="about__product-label about__product-text--phase-4">【デザイン上の工夫点】</dt>
+            <dd class="about__product-description about__product-text--phase-4">
+              <ul class="about__product-description-list">
+                <li class="about__product-description-dic">募集職種が複数並ぶ一覧画面ではカード型のレイアウトを採用することで、情報のまとまりを保ちつつ、視線の流れが途切れない構成としています。また、スマートフォンでの閲覧を前提に余白を広めに取り、文字サイズやボタンサイズを調整することで、可読性とタップ操作のしやすさを確保しました。CTAボタンについては、背景から十分なコントラストを取った配色とし、スクロール中でも視認しやすい位置に配置することで、行動につながりやすいデザインとしています。</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </article>
+
+    </main>
+  </div>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
