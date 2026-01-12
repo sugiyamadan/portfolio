@@ -9,7 +9,7 @@
   margin: 10px;
   padding: 10px;
   position: fixed;
-  height: 100vh;
+  height: 95vh;
   width: 190px;
 }
 
@@ -19,7 +19,8 @@
 }
 
 .sidebar__production{
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  margin-left: 10px;
 }
 
 .sidebar__production-subtitle{
