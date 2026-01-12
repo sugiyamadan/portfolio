@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ご紹介特典</title>
+  <title>SPOBY リワード一覧画面</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="../../css/foundation/_reset.css">
@@ -148,14 +148,22 @@
       <article class="about__product">
         <div>
           <!-- 制作物画像 -->
-          <figure class="about__product-figure">
-            <img src="../../img/product/banner/tokuten_banner.png" alt="ご紹介特典" class="about__product-figure-img">
+          <figure class="u-flex u-items-center u-justify-center">
+            <div>
+              <p class="about__product-figure-ui-text about__product-before">Before</p>
+              <img src="../../img/product/ui/ui_sponsor_view_before.png" alt="SPOBY リワード一覧画面" class="about__product-figure-ui-img">
+            </div>
+              <div class="about__product-figure-arrow" aria-hidden="true"></div>
+            <div>
+              <p class="about__product-figure-ui-text about__product-after">After</p>
+              <img src="../../img/product/ui/ui_sponsor_view_after.png" alt="SPOBY リワード一覧画面" class="about__product-figure-ui-img">
+            </div>
           </figure>
         </div>
 
         <!-- 制作物タイトル -->
         <div class="about__product-title-block">
-          <h1 class="about__product-title">ご紹介特典_アプリ内ポイント交換リワード</h1>
+          <h1 class="about__product-title">SPOBY リワード一覧画面</h1>
         </div>
 
         <!-- 制作背景・意図 -->
@@ -167,7 +175,7 @@
             <dt class="about__product-label about__product-text--phase-1">【概要】</dt>
             <dd class="about__product-description about__product-text--phase-1">
               <ul class="about__product-description-list">
-                <li class="about__product-description-dic">役割 : 健康・環境行動によって獲得したポイントを、リワードと交換できることを直感的に伝え、ユーザーの交換行動を促すバナー</li>
+                <li class="about__product-description-dic">役割 : ユーザーが「どのコミュニティで」「どの条件のリワードを」詳細画面へ遷移する前に取捨選択できるようにする役割を担う画面です。</li>
                 <li class="about__product-description-dic">掲載場所 : SPOBYアプリ内 リワード一覧画面</li>
                 <li class="about__product-description-dic">アプリ（SPOBY）について : <br>「SPOBY」は人の活動による脱炭素・健康増進を実現するアプリです。ユーザーはアプリを利用して活動を行うことでポイントを獲得でき、貯まったポイントはアプリ内に掲載されている様々なリワードと頑張ったご褒美として交換・獲得することができます。</li>
               </ul>
@@ -181,11 +189,27 @@
             <dt class="about__product-label about__product-text--phase-2">【制作目的】</dt>
             <dd class="about__product-description about__product-text--phase-2">
               <ul class="about__product-description-list">
-                <li class="about__product-description-dic">「どの商品を」「何名様に」「どのような条件で獲得できるのか」をユーザーが直感的に理解できるよう設計し、「脱炭素・健康活動 → ポイント獲得 → リワード交換」という行動を促進することを目的として制作しました。</li>
-                <li class="about__product-description-dic">ユーザーのアプリ利用継続や、店舗への来店・商品認知の向上につなげる</li>
+                <li class="about__product-description-dic">複数コミュニティに参加しているユーザーが多いという前提のもと、リワード一覧画面において、「自治体・企業といったコミュニティ単位」「「先着」「抽選」「女性限定」などの獲得条件」を軸に、リワードを直感的に判別・絞り込みできる状態をつくることを目的として制作しました。<br>
+                  これにより、ユーザーがリワード詳細画面へ遷移して確認する手間を減らし、自分の条件に合ったリワードへスムーズに辿り着ける体験を実現することを狙っています。</li>
               </ul>
             </dd>
           </div>
+
+          <div class="about__product-design-arrow" aria-hidden="true"></div>
+
+         <!-- 背景 / 課題 -->
+         <div class="about__product-design about__product-bg--phase-3">
+          <dt class="about__product-label about__product-text--phase-3">【背景/課題】</dt>
+          <dd class="about__product-description about__product-text--phase-3">
+            <ul class="about__product-description-list">
+              <li class="about__product-description-dic">
+                複数の自治体・企業コミュニティに参加しているユーザーが多い一方で、従来のリワード一覧画面では、「どのコミュニティに紐づくリワードなのか」を視覚的に判断することができませんでした。そのため、一覧画面上では、自身が居住している自治体コミュニティのリワードなのか、あるいは勤務先コミュニティのリワードなのかが分からず、ユーザーは毎回リワード詳細画面へ遷移して確認する必要がありました。このような操作が繰り返されることで、
+                リワード探索時の手間やストレスが発生している状況でした。また、リワードには「先着」「抽選」「女性限定」など、獲得条件の種類も多く存在していましたが、一覧画面ではそれらを判別・絞り込みすることができず、ユーザーが自分の条件に合ったリワードを探しづらいという課題もありました。<br>
+                これらの背景から、リワード一覧画面の段階で、コミュニティ単位および獲得条件ごとにリワードをフィルタリングできる仕組みが必要とされていました。
+              </li>
+            </ul>
+          </dd>
+        </div>
 
           <div class="about__product-design-arrow" aria-hidden="true"></div>
 
@@ -194,21 +218,12 @@
             <dt class="about__product-label about__product-text--phase-3">【制作時に重視したポイント】</dt>
             <dd class="about__product-description about__product-text--phase-3">
               <ul class="about__product-description-list">
-                <li class="about__product-description-dic">紹介特典としてのキャンペーンであることから、**「開催日」「特典内容」「先着人数」**といった行動判断に直結する情報を、短時間で把握できる情報設計を重視しました。特に「先着200名様限定」という条件は参加意欲を高める重要な要素であるため、数字を大きく強調し、他の情報よりも優先して認識される構成としています。また、複数商品から選べる特典であることが一目で伝わるよう、商品画像をまとめて配置し、内容理解から参加判断までをスムーズにつなげるレイアウトを意識しました。</li>
+                <li class="about__product-description-dic">一覧画面の時点で判断できる情報設計<br>詳細画面に遷移しなくても、「自分に関係のあるリワードかどうか」を判断できる構造を重視しました。</li>
+                <li class="about__product-description-dic">ユーザーの利用文脈に沿ったフィルタリング軸<br>コミュニティ単位・獲得条件といった、実際のリワード探索時に使われる判断軸を基にフィルタリング機能を設計しています。</li>
+                <li class="about__product-description-dic">今後の拡張を考慮した構造<br>コミュニティ数やリワード数が増えた場合でも、一覧性や視認性が損なわれない設計を重視しています。</li>
               </ul>
             </dd>
           </div>
-<!-- 
-          <div class="about__product-design-arrow" aria-hidden="true"></div>
-
-          <div class="about__product-design about__product-bg--phase-4">
-            <dt class="about__product-label about__product-text--phase-4">【デザイン上の工夫点】</dt>
-            <dd class="about__product-description about__product-text--phase-4">
-              <ul class="about__product-description-list">
-                <li class="about__product-description-dic">キャンペーンの特別感や楽しさが直感的に伝わるよう、明るく勢いのある配色と動きのあるビジュアルを取り入れています。背景には粒子感や装飾要素を加えることでイベント感を演出し、商品パッケージを目立たせる構成としました。また、キャラクター性のある商品ビジュアルを活かすため、文字情報とのバランスを調整し、賑やかさの中でも情報が埋もれないようコントラストと配置を工夫しています。</li>
-              </ul>
-            </dd>
-          </div> -->
         </dl>
       </article>
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ご紹介特典</title>
+  <title>SPOBY リワード詳細画面</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="../../css/foundation/_reset.css">
@@ -148,27 +148,35 @@
       <article class="about__product">
         <div>
           <!-- 制作物画像 -->
-          <figure class="about__product-figure">
-            <img src="../../img/product/banner/tokuten_banner.png" alt="ご紹介特典" class="about__product-figure-img">
+          <figure class="u-flex u-items-center u-justify-center">
+            <div>
+              <p class="about__product-figure-ui-text about__product-before">Before</p>
+              <img src="../../img/product/ui/ui_sponsor_detail_view_before.png" alt="SPOBY リワード詳細画面" class="about__product-figure-ui-img">
+            </div>
+              <div class="about__product-figure-arrow" aria-hidden="true"></div>
+            <div>
+              <p class="about__product-figure-ui-text about__product-after">After</p>
+              <img src="../../img/product/ui/ui_sponsor_detail_view_after.png" alt="SPOBY リワード詳細画面" class="about__product-figure-ui-img">
+            </div>
           </figure>
         </div>
 
         <!-- 制作物タイトル -->
         <div class="about__product-title-block">
-          <h1 class="about__product-title">ご紹介特典_アプリ内ポイント交換リワード</h1>
+          <h1 class="about__product-title">SPOBY リワード詳細画面</h1>
         </div>
 
         <!-- 制作背景・意図 -->
         <h3 class="about__product-design-title">制作背景・意図</h3>
         <dl class="about__product-design-list u-flex u-direction-column">
 
-          <!-- 概要 -->
-          <div class="about__product-design about__product-bg--phase-1">
+           <!-- 概要 -->
+           <div class="about__product-design about__product-bg--phase-1">
             <dt class="about__product-label about__product-text--phase-1">【概要】</dt>
             <dd class="about__product-description about__product-text--phase-1">
               <ul class="about__product-description-list">
-                <li class="about__product-description-dic">役割 : 健康・環境行動によって獲得したポイントを、リワードと交換できることを直感的に伝え、ユーザーの交換行動を促すバナー</li>
-                <li class="about__product-description-dic">掲載場所 : SPOBYアプリ内 リワード一覧画面</li>
+                <li class="about__product-description-dic">役割 : ユーザーがリワード内容・獲得条件・行動判断を段階的に理解できるよう整理する役割を担う画面です。</li>
+                <li class="about__product-description-dic">掲載場所 : SPOBYアプリ内 リワード詳細画面</li>
                 <li class="about__product-description-dic">アプリ（SPOBY）について : <br>「SPOBY」は人の活動による脱炭素・健康増進を実現するアプリです。ユーザーはアプリを利用して活動を行うことでポイントを獲得でき、貯まったポイントはアプリ内に掲載されている様々なリワードと頑張ったご褒美として交換・獲得することができます。</li>
               </ul>
             </dd>
@@ -181,11 +189,24 @@
             <dt class="about__product-label about__product-text--phase-2">【制作目的】</dt>
             <dd class="about__product-description about__product-text--phase-2">
               <ul class="about__product-description-list">
-                <li class="about__product-description-dic">「どの商品を」「何名様に」「どのような条件で獲得できるのか」をユーザーが直感的に理解できるよう設計し、「脱炭素・健康活動 → ポイント獲得 → リワード交換」という行動を促進することを目的として制作しました。</li>
-                <li class="about__product-description-dic">ユーザーのアプリ利用継続や、店舗への来店・商品認知の向上につなげる</li>
+                <li class="about__product-description-dic">情報の優先順位や表示順が整理されていなかった従来の画面構造を見直し、ユーザーが「どのようなリワードなのか」「どの条件で獲得できるのか」「自分はチャレンジすべきか」を自然な流れで理解・判断できる状態をつくることを目的として制作しました。<br>これにより、不要な迷いや誤解を減らし、リワード獲得への行動をスムーズに促すことを狙っています。</li>
               </ul>
             </dd>
           </div>
+
+          <div class="about__product-design-arrow" aria-hidden="true"></div>
+
+         <!-- 背景 / 課題 -->
+         <div class="about__product-design about__product-bg--phase-3">
+          <dt class="about__product-label about__product-text--phase-3">【背景/課題】</dt>
+          <dd class="about__product-description about__product-text--phase-3">
+            <ul class="about__product-description-list">
+              <li class="about__product-description-dic">
+                従来のリワード詳細画面では、情報の構造設計が整理されておらず、ユーザーが何をどの順で確認すればよいのか分かりづらい設計になっていました。具体的には、獲得に使用しないポイント種別まで「獲得に必要なジュエル・ポイント」として表示されており、どのポイントでリワードを獲得できるのかを直感的に判断しづらい状態でした。また、画面上部から情報を追った際に、リワード内容よりも先に種類や選択肢といった詳細情報が表示されており、ユーザーが段階的に理解して判断するための情報の優先順位が整理されていませんでした。その結果、リワード内容の把握から獲得条件の理解、行動判断までの思考プロセスが分断され、ユーザーが迷いやすい画面構造となっていました。
+              </li>
+            </ul>
+          </dd>
+        </div>
 
           <div class="about__product-design-arrow" aria-hidden="true"></div>
 
@@ -194,21 +215,12 @@
             <dt class="about__product-label about__product-text--phase-3">【制作時に重視したポイント】</dt>
             <dd class="about__product-description about__product-text--phase-3">
               <ul class="about__product-description-list">
-                <li class="about__product-description-dic">紹介特典としてのキャンペーンであることから、**「開催日」「特典内容」「先着人数」**といった行動判断に直結する情報を、短時間で把握できる情報設計を重視しました。特に「先着200名様限定」という条件は参加意欲を高める重要な要素であるため、数字を大きく強調し、他の情報よりも優先して認識される構成としています。また、複数商品から選べる特典であることが一目で伝わるよう、商品画像をまとめて配置し、内容理解から参加判断までをスムーズにつなげるレイアウトを意識しました。</li>
+                <li class="about__product-description-dic">情報の優先順位と表示順の整理<br>ユーザーの理解プロセスに沿って、「リワード名・種類 → 獲得条件 → リワード詳細内容 → 行動」の順で情報を構成しました。</li>
+                <li class="about__product-description-dic">不要な情報の排除と明確化<br>実際に使用しないポイント情報を表示しないことで、どのポイントでリワードを獲得できるのかを直感的に判断できるようにしました。</li>
+                <li class="about__product-description-dic">判断コストを下げる構造設計<br>画面を見ただけで必要な情報が把握できるよう、ユーザーが考え込まなくてもよい設計を意識しています。</li>
               </ul>
             </dd>
           </div>
-<!-- 
-          <div class="about__product-design-arrow" aria-hidden="true"></div>
-
-          <div class="about__product-design about__product-bg--phase-4">
-            <dt class="about__product-label about__product-text--phase-4">【デザイン上の工夫点】</dt>
-            <dd class="about__product-description about__product-text--phase-4">
-              <ul class="about__product-description-list">
-                <li class="about__product-description-dic">キャンペーンの特別感や楽しさが直感的に伝わるよう、明るく勢いのある配色と動きのあるビジュアルを取り入れています。背景には粒子感や装飾要素を加えることでイベント感を演出し、商品パッケージを目立たせる構成としました。また、キャラクター性のある商品ビジュアルを活かすため、文字情報とのバランスを調整し、賑やかさの中でも情報が埋もれないようコントラストと配置を工夫しています。</li>
-              </ul>
-            </dd>
-          </div> -->
         </dl>
       </article>
 

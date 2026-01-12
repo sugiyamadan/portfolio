@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ご紹介特典</title>
+  <title>SPOBY コミュニティ画面</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="../../css/foundation/_reset.css">
@@ -148,26 +148,34 @@
       <article class="about__product">
         <div>
           <!-- 制作物画像 -->
-          <figure class="about__product-figure">
-            <img src="../../img/product/banner/tokuten_banner.png" alt="ご紹介特典" class="about__product-figure-img">
+          <figure class="u-flex u-items-center u-justify-center">
+            <div>
+              <p class="about__product-figure-ui-text about__product-before">Before</p>
+              <img src="../../img/product/ui/ui_community_view_before.png" alt="SPOBY コミュニティ画面" class="about__product-figure-ui-img">
+            </div>
+              <div class="about__product-figure-arrow" aria-hidden="true"></div>
+            <div>
+              <p class="about__product-figure-ui-text about__product-after">After</p>
+              <img src="../../img/product/ui/ui_community_view_after.png" alt="SPOBY コミュニティ画面" class="about__product-figure-ui-img">
+            </div>
           </figure>
         </div>
 
         <!-- 制作物タイトル -->
         <div class="about__product-title-block">
-          <h1 class="about__product-title">ご紹介特典_アプリ内ポイント交換リワード</h1>
+          <h1 class="about__product-title">SPOBY コミュニティ画面</h1>
         </div>
 
         <!-- 制作背景・意図 -->
         <h3 class="about__product-design-title">制作背景・意図</h3>
         <dl class="about__product-design-list u-flex u-direction-column">
 
-          <!-- 概要 -->
-          <div class="about__product-design about__product-bg--phase-1">
+           <!-- 概要 -->
+           <div class="about__product-design about__product-bg--phase-1">
             <dt class="about__product-label about__product-text--phase-1">【概要】</dt>
             <dd class="about__product-description about__product-text--phase-1">
               <ul class="about__product-description-list">
-                <li class="about__product-description-dic">役割 : 健康・環境行動によって獲得したポイントを、リワードと交換できることを直感的に伝え、ユーザーの交換行動を促すバナー</li>
+                <li class="about__product-description-dic">役割 : ユーザーが自分の参加状況を把握しつつ、各コミュニティで「脱炭素行動が実施できるかどうか」を一目で判断するための起点となる画面です。</li>
                 <li class="about__product-description-dic">掲載場所 : SPOBYアプリ内 リワード一覧画面</li>
                 <li class="about__product-description-dic">アプリ（SPOBY）について : <br>「SPOBY」は人の活動による脱炭素・健康増進を実現するアプリです。ユーザーはアプリを利用して活動を行うことでポイントを獲得でき、貯まったポイントはアプリ内に掲載されている様々なリワードと頑張ったご褒美として交換・獲得することができます。</li>
               </ul>
@@ -181,11 +189,23 @@
             <dt class="about__product-label about__product-text--phase-2">【制作目的】</dt>
             <dd class="about__product-description about__product-text--phase-2">
               <ul class="about__product-description-list">
-                <li class="about__product-description-dic">「どの商品を」「何名様に」「どのような条件で獲得できるのか」をユーザーが直感的に理解できるよう設計し、「脱炭素・健康活動 → ポイント獲得 → リワード交換」という行動を促進することを目的として制作しました。</li>
-                <li class="about__product-description-dic">ユーザーのアプリ利用継続や、店舗への来店・商品認知の向上につなげる</li>
+                <li class="about__product-description-dic">自治体・企業コミュニティの増加に伴い、ユーザーが自分の参加状況やコミュニティの特性を把握しづらくなっていたため、「どのコミュニティに参加しているのか」「そのコミュニティで脱炭素行動を実施できるか」を一覧画面の時点で直感的に理解できる状態をつくることを目的として制作しました。</li>
               </ul>
             </dd>
           </div>
+
+          <div class="about__product-design-arrow" aria-hidden="true"></div>
+
+         <!-- 背景 / 課題 -->
+         <div class="about__product-design about__product-bg--phase-3">
+          <dt class="about__product-label about__product-text--phase-3">【背景/課題】</dt>
+          <dd class="about__product-description about__product-text--phase-3">
+            <ul class="about__product-description-list">
+              <li class="about__product-description-dic">自治体・企業コミュニティの種類が長期的に増加する中で、ユーザーが自分がどのコミュニティに参加しているのかを把握しづらいという課題がありました。</li>
+              <li class="about__product-description-dic">また、自治体・企業コミュニティごとに、脱炭素行動が「実施できるコミュニティ」と「実施できないコミュニティ」が存在していましたが、従来の画面ではその違いを直感的に判別することができませんでした。脱炭素行動によって獲得できるポイントは、リワードと交換する際に必要となる主要なポイントであるため、ユーザーにとって「そのコミュニティで脱炭素行動ができるかどうか」は参加判断する上で重要な情報です。そのため、コミュニティ一覧の段階で「脱炭素行動が実施でき、ポイントを貯められるコミュニティ」であることを一目で判断できる表示が求められていました。</li>
+            </ul>
+          </dd>
+        </div>
 
           <div class="about__product-design-arrow" aria-hidden="true"></div>
 
@@ -194,21 +214,11 @@
             <dt class="about__product-label about__product-text--phase-3">【制作時に重視したポイント】</dt>
             <dd class="about__product-description about__product-text--phase-3">
               <ul class="about__product-description-list">
-                <li class="about__product-description-dic">紹介特典としてのキャンペーンであることから、**「開催日」「特典内容」「先着人数」**といった行動判断に直結する情報を、短時間で把握できる情報設計を重視しました。特に「先着200名様限定」という条件は参加意欲を高める重要な要素であるため、数字を大きく強調し、他の情報よりも優先して認識される構成としています。また、複数商品から選べる特典であることが一目で伝わるよう、商品画像をまとめて配置し、内容理解から参加判断までをスムーズにつなげるレイアウトを意識しました。</li>
+                <li class="about__product-description-dic">参加状況の可視化<br>「参加中」「未参加」といった状態が一目で分かるようにし、ユーザーが自分の現在地を把握しやすい構造を重視しました。</li>
+                <li class="about__product-description-dic">脱炭素行動の可否を直感的に伝える表現<br>脱炭素行動によって得られるポイントがリワード交換に直結することが多いため、「脱炭素行動が実施できるコミュニティ」であることをタグやラベルによって即座に判別できるようにしています。</li>
               </ul>
             </dd>
           </div>
-<!-- 
-          <div class="about__product-design-arrow" aria-hidden="true"></div>
-
-          <div class="about__product-design about__product-bg--phase-4">
-            <dt class="about__product-label about__product-text--phase-4">【デザイン上の工夫点】</dt>
-            <dd class="about__product-description about__product-text--phase-4">
-              <ul class="about__product-description-list">
-                <li class="about__product-description-dic">キャンペーンの特別感や楽しさが直感的に伝わるよう、明るく勢いのある配色と動きのあるビジュアルを取り入れています。背景には粒子感や装飾要素を加えることでイベント感を演出し、商品パッケージを目立たせる構成としました。また、キャラクター性のある商品ビジュアルを活かすため、文字情報とのバランスを調整し、賑やかさの中でも情報が埋もれないようコントラストと配置を工夫しています。</li>
-              </ul>
-            </dd>
-          </div> -->
         </dl>
       </article>
 
