@@ -102,6 +102,7 @@
 }
 .about__product-figure-SP-scroll-img{
   margin: 0 5px;
+  max-width: 270px;
 }
 
 /* 矢印 */
