@@ -76,7 +76,7 @@
   grid-area: main;
   display: grid;
   grid-template-columns: 100%;
-  gap: 30px;
+  gap: 60px;
 }
   /* バナーサイズ ギャラリー */
 .product__card-banner{
@@ -84,5 +84,9 @@
   display: grid;
   grid-template-columns: 100%;
   gap: 30px;
+}
+
+.product__card-title{
+  margin: 15px 0 5px;
 }
 }
