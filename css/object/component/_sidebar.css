@@ -44,12 +44,13 @@
     border-radius: var(--border-radius-100);
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 8px;
     width: 95%;
     height: auto;
     z-index: 10;
-    padding: 0;
-    margin: 10px auto;
+    padding: 8px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.05);
   }
 
   .sidebar .sidebar__nav{
@@ -79,7 +80,7 @@
 /* サイドバーカテゴリーごとにクリックすると「active-btn」「hidden-btn」が追加される */
 .sidebar__filter-btn{
   color: var(--color-gray-text);
-  padding: 5px 10px 5px 5px;
+  padding: 10px;
   border-radius: var(--border-radius-5);
   transition: all .3s;
   width: 100%;
@@ -97,9 +98,11 @@
   background-color: var(--color-hover-bg);
 }
 
+/* カテゴリごとのアイコン */
 .sidebar__filter-icon{
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
 }
 
 .sidebar__filter-label{
@@ -114,7 +117,8 @@
     width: 100%;
   }
 
-  /* サイドバーカテゴリーごとにクリックすると「active-btn」「hidden-btn」が追加される */
+
+/* サイドバーカテゴリーごとにクリックすると「active-btn」「hidden-btn」が追加される */
 .sidebar__filter-btn{
   padding: 5px 0;
   border-radius: var(--border-radius-100);
@@ -125,14 +129,13 @@
   background-color: var(--color-white-bg);
 }
 
+/* カテゴリごとのアイコン */
+.sidebar__filter-icon{
+  margin-right: 0px;
+}
+
 .sidebar__filter-label{
   font-size: .6rem;
   margin-top: 2px;
 }
-}
-
-
-/*---- スマホデバイス  -----*/
-@media (max-width: 400px){
-
 }
