@@ -102,12 +102,12 @@
 }
 .about__product-figure-SP-scroll-img{
   margin: 0 5px;
-  max-width: 270px;
+  max-width: 250px;
 }
 
 /* SP・PCサイズでも横スクロール表示する */
 .about__product-figure-PC-scroll-img{
-  max-width: 270px;
+  max-width: 250px;
 }
 
 /* 矢印 */
