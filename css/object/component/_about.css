@@ -105,6 +105,11 @@
   max-width: 270px;
 }
 
+/* SP・PCサイズでも横スクロール表示する */
+.about__product-figure-PC-scroll-img{
+  max-width: 270px;
+}
+
 /* 矢印 */
 .about__product-figure-arrow {
   margin: 3%;
