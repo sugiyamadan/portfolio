@@ -69,3 +69,20 @@
   color: var(--color-whitegray-text);
 }
 
+
+@media (max-width: 500px){
+/* 正方形サイズ ギャラリー */
+.product__card{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 30px;
+}
+  /* バナーサイズ ギャラリー */
+.product__card-banner{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 30px;
+}
+}

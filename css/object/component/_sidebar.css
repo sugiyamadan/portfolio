@@ -6,10 +6,13 @@
   grid-area: sidebar;
   background-color: var(--color-white-bg);
   border-radius: var(--border-radius-10);
-  margin: 10px;
   padding: 10px;
   position: fixed;
-  height: 95vh;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
   width: 190px;
 }
 
@@ -35,16 +38,18 @@
 }
 
 @media (max-width: 767px){
-
   .sidebar{
-    margin: 0px;
-    padding: 0px;
     position: fixed;
-    z-index: 1;
+    top: auto;     /* ← 重要 */
+    border-radius: var(--border-radius-100);
+    left: 0;
+    right: 0;
     bottom: 0;
-    width: 100%;
+    width: 95%;
     height: auto;
-    border-radius: 0;
+    z-index: 10;
+    padding: 0;
+    margin: 10px auto;
   }
 
   .sidebar .sidebar__nav{
@@ -74,7 +79,6 @@
 /* サイドバーカテゴリーごとにクリックすると「active-btn」「hidden-btn」が追加される */
 .sidebar__filter-btn{
   color: var(--color-gray-text);
-  background-color: var(--color-white-bg);
   padding: 5px 10px 5px 5px;
   border-radius: var(--border-radius-5);
   transition: all .3s;
@@ -113,11 +117,22 @@
   /* サイドバーカテゴリーごとにクリックすると「active-btn」「hidden-btn」が追加される */
 .sidebar__filter-btn{
   padding: 5px 0;
-  border-radius: var(--border-radius-0);
+  border-radius: var(--border-radius-100);
+}
+
+.sidebar__filter-btn.active-btn{
+  color: var(--color-blue-text);
+  background-color: var(--color-white-bg);
 }
 
 .sidebar__filter-label{
   font-size: .6rem;
   margin-top: 2px;
 }
+}
+
+
+/*---- スマホデバイス  -----*/
+@media (max-width: 400px){
+
 }
