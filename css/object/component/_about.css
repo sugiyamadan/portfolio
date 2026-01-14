@@ -192,27 +192,22 @@ margin: 10px auto;
 /* 課題カラー */
 .about__product-bg--phase-1 {
     background-color: var(--color-white-bg);
-    border: solid 1px #8D8D8D;
   }
   
   .about__product-bg--phase-2 {
     background-color: var(--color-white-bg);
-    border: solid 1px #00ACCB;
   }
   
   .about__product-bg--phase-3 {
     background-color: var(--color-white-bg);
-    border: solid 1px #0085cc;
   }
   
   .about__product-bg--phase-4 {
     background-color: var(--color-white-bg);
-    border: solid 1px #0066cc;
   }
   
   .about__product-bg--result {
     background-color: var(--color-white-bg);
-    border: solid 1px #FF7600;
   }
   
 
@@ -232,7 +227,7 @@ margin: 10px auto;
 }
 
 .about__product-text--phase-4 {
-    color: #0066cc;
+    color: #0060c0;
 }
 
 .about__product-text--result {
