@@ -4,7 +4,6 @@
 
 .about{
     grid-area: main;
-    margin: 10px;
     letter-spacing: var(--letter-spacing-S);
 }
 
@@ -77,7 +76,7 @@
 }
 
 .about__product-title-block{
-   margin: 20px 0px 40px;
+   margin: 20px 10px 40px;
 }
 
 
@@ -134,11 +133,14 @@
 .about__product-design-title {
 font-size: 1rem;
 margin-bottom: 10px;
+margin-right: 10px;
+margin-left: 10px;
 }
 
 /* プロセスごとの余白調整 */
 .about__product-design-list {
 gap: 10px;
+margin: 10px;
 }
   
 
