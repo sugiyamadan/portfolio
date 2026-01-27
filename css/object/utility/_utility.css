@@ -37,6 +37,10 @@
   justify-content: flex-end;
 }
 
+.u-justify-evenly {
+  justify-content: space-evenly;
+}
+
 
 /* === Align Items === */
 .u-items-center {
