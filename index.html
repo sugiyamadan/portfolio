@@ -12,7 +12,11 @@
   <link rel="stylesheet" href="../portfolio/css/layout/_layout.css">
   <link rel="stylesheet" href="../portfolio/css/object/component/_sidebar.css">
   <link rel="stylesheet" href="../portfolio/css/object/utility/_utility.css">
+  <link rel="stylesheet" href="../portfolio/css/object/component/_profile.css">
   <link rel="stylesheet" href="../portfolio/css/object/component/_product-card.css">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../portfolio/img/icon/favicon.png">
 
    <!-- Google Fonts 読み込み -->
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
@@ -20,8 +24,18 @@
 </head>
 <body>
 
-  <!-- サイドバー -->
+  <!-- スマホで見せる時のプロフィール -->
+  <div class="profile_sp">
+    <a href="../portfolio/product-list/profile/profile.html" class="profile_sp__link u-flex u-justify-end u-items-center">
+      <img src="../portfolio/img/icon/profile_icon.jpg" alt="プロフィールアイコン" class="profile_sp__img">
+      <div>
+        <p class="profile_sp__subtitle">プロフィール</p>
+        <h3 class="profile_sp__title">杉山 大貴</h3>
+      </div>
+    </a>
+  </div>
 
+  <!-- グリッド -->
   <div class="grid__home-container">
 
     <!-- ナビゲーション -->
@@ -99,18 +113,23 @@
     </nav>
 
 
+    <!-- PCで見せる時のプロフィール -->
+  <div class="profile_pc">
+    <img src="../portfolio/img/profile/profile.jpg" alt="プロフィール">
+  </div>
+
+
     <!-- 制作物一覧 -->
     <div class="product">
 
       <!-- ポスター/チラシ -->
       <div class="contents" data-category="graphic">
-        <h3 class="product__section-title">ポスター/チラシ</h3>
 
         <div class="product__card">
         <article>
           <a href="../portfolio/product-list/poster-flyer/poster-flyer-haiyu.html" class="product__card-link">
             <img class="product__card-img" src="../portfolio/img/product/poster-flyer/poster-flyer_gallery_haiyu.png" alt="入間市×SPOBY 廃食用油回収">
-            <h4 class="product__card-title">入間市×SPOBY 廃食用油回収</h4>
+            <h4 class="product__card-title">入間市×SPOBYアプリ 廃食用油回収_ポスター</h4>
             <dl class="product__card-info">
               <div class="product__card-info-block">
                 <dt class="product__card-label">【担当領域】</dt>
@@ -121,22 +140,9 @@
         </article>
 
         <article>
-          <a href="../portfolio/product-list/poster-flyer/poster-flyer-stamp.html" class="product__card-link">
-            <img class="product__card-img" src="../portfolio/img/product/poster-flyer/poster-flyer_gallery_stamp.png" alt="デジタルスタンプラリー×エコクイズ">
-            <h4 class="product__card-title">阿蘇シーサイドピクニック×SPOBY_デジタルスタンプラリー×エコクイズ</h4>
-            <dl class="product__card-info">
-              <div class="product__card-info-block">
-                <dt class="product__card-label">【担当領域】</dt>
-                <dd class="product__card-text">情報・構造設計/ビジュアル制作</dd>
-              </div>
-            </dl>
-          </a>
-        </article>
-
-        <article>
-          <a href="../portfolio/product-list/poster-flyer/poster-flyer-nagahama.html" class="product__card-link">
-            <img class="product__card-img" src="../portfolio/img/product/poster-flyer/poster-flyer_gallery_nagahama.png" alt="長浜市×SPOBY ながはまゼロカーボンウォーク">
-            <h4 class="product__card-title">長浜市×SPOBY ながはまゼロカーボンウォーク</h4>
+          <a href="../portfolio/product-list/poster-flyer/poster-flyer-unnan.html" class="product__card-link">
+            <img class="product__card-img" src="../portfolio/img/product/poster-flyer/poster-flyer_gallery_unnan.png" alt="雲南市×SPOBY エコサイクル&ウォーク">
+            <h4 class="product__card-title">雲南市×SPOBYアプリ エコサイクル&ウォーク_ポスター</h4>
             <dl class="product__card-info">
               <div class="product__card-info-block">
                 <dt class="product__card-label">【担当領域】</dt>
@@ -149,7 +155,7 @@
         <article>
           <a href="../portfolio/product-list/poster-flyer/poster-flyer-crystal.html" class="product__card-link">
             <img class="product__card-img" src="../portfolio/img/product/poster-flyer/poster-flyer_gallery_crystal.png" alt="奈良県×SPOBY 自転車で集めよう！奈良クリスタルチャレンジ">
-            <h4 class="product__card-title">奈良県×SPOBY 自転車で集めよう！奈良クリスタルチャレンジ</h4>
+            <h4 class="product__card-title">奈良県×SPOBYアプリ 自転車で集めよう！奈良クリスタルチャレンジ_ポスター/チラシ</h4>
             <dl class="product__card-info">
               <div class="product__card-info-block">
                 <dt class="product__card-label">【担当領域】</dt>
@@ -160,9 +166,9 @@
         </article>
 
         <article>
-          <a href="../portfolio/product-list/poster-flyer/poster-flyer-unnan.html" class="product__card-link">
-            <img class="product__card-img" src="../portfolio/img/product/poster-flyer/poster-flyer_gallery_unnan.png" alt="雲南市×SPOBY エコサイクル&ウォーク">
-            <h4 class="product__card-title">雲南市×SPOBY エコサイクル&ウォーク</h4>
+          <a href="../portfolio/product-list/poster-flyer/poster-flyer-nagahama.html" class="product__card-link">
+            <img class="product__card-img" src="../portfolio/img/product/poster-flyer/poster-flyer_gallery_nagahama.png" alt="長浜市×SPOBY ながはまゼロカーボンウォーク">
+            <h4 class="product__card-title">長浜市×SPOBYアプリ ながはまゼロカーボンウォーク_ポスター</h4>
             <dl class="product__card-info">
               <div class="product__card-info-block">
                 <dt class="product__card-label">【担当領域】</dt>
@@ -171,58 +177,32 @@
             </dl>
           </a>
         </article>
+
+        <article>
+          <a href="../portfolio/product-list/poster-flyer/poster-flyer-stamp.html" class="product__card-link">
+            <img class="product__card-img" src="../portfolio/img/product/poster-flyer/poster-flyer_gallery_stamp.png" alt="デジタルスタンプラリー×エコクイズ">
+            <h4 class="product__card-title">阿蘇シーサイドピクニック×SPOBYアプリ デジタルスタンプラリー×エコクイズ_ポスター</h4>
+            <dl class="product__card-info">
+              <div class="product__card-info-block">
+                <dt class="product__card-label">【担当領域】</dt>
+                <dd class="product__card-text">情報・構造設計/ビジュアル制作</dd>
+              </div>
+            </dl>
+          </a>
+        </article>
+
       </div>
       </div>
 
 
       <!-- バナー/広告 -->
       <div class="contents" data-category="banner">
-        <h3 class="product__section-title">バナー/広告</h3>
 
         <div class="product__card-banner">
           <article>
             <a href="../portfolio/product-list/banner/banner-meganeNoFujita.html" class="product__card-link">
               <img class="product__card-img" src="../portfolio/img/product/banner/iruma_meganehujita_banner.png" alt="メガネのフジタバナー">
-              <h4 class="product__card-title">メガネのフジタ オリジナルメガネスタンド_アプリ内ポイント交換リワード</h4>
-              <dl class="product__card-info">
-                <div class="product__card-info-block">
-                  <dt class="product__card-label">【担当領域】</dt>
-                  <dd class="product__card-text">情報・構造設計/ビジュアル制作</dd>
-                </div>
-              </dl>
-            </a>
-          </article>
-
-          <article>
-            <a href="../portfolio/product-list/banner/banner-FCosaka.html" class="product__card-link">
-              <img class="product__card-img" src="../portfolio/img/product/banner/FCOsaka_banner.png" alt="FC大阪コミュニティバナー">
-              <h4 class="product__card-title">FC大阪コミュニティバナー_ファンへの参加・周知促進バナー</h4>
-              <dl class="product__card-info">
-                <div class="product__card-info-block">
-                  <dt class="product__card-label">【担当領域】</dt>
-                  <dd class="product__card-text">ビジュアル制作</dd>
-                </div>
-              </dl>
-            </a>
-          </article>
-
-          <article>
-            <a href="../portfolio/product-list/banner/banner-hairDrier.html" class="product__card-link">
-              <img class="product__card-img" src="../portfolio/img/product/banner/panasonic_banner.png" alt="パナソニック ヘアドライヤーナノケア">
-              <h4 class="product__card-title">パナソニック ヘアドライヤーナノケア_アプリ内ポイント交換リワード</h4>
-              <dl class="product__card-info">
-                <div class="product__card-info-block">
-                  <dt class="product__card-label">【担当領域】</dt>
-                  <dd class="product__card-text">情報・構造設計/ビジュアル制作</dd>
-                </div>
-              </dl>
-            </a>
-          </article>
-
-          <article>
-            <a href="../portfolio/product-list/banner/banner-McDonald.html" class="product__card-link">
-              <img class="product__card-img" src="../portfolio/img/product/banner/McDonald_banner.png" alt="マクドナルド ポテトSサイズ">
-              <h4 class="product__card-title">マクドナルド帯広西5条・帯広白樺通店_来店・売上促進/アプリ内ポイント交換リワード</h4>
+              <h4 class="product__card-title">メガネのフジタ オリジナルメガネスタンド_アプリ内ポイント交換リワードバナー</h4>
               <dl class="product__card-info">
                 <div class="product__card-info-block">
                   <dt class="product__card-label">【担当領域】</dt>
@@ -246,9 +226,61 @@
           </article>
 
           <article>
+            <a href="../portfolio/product-list/banner/banner-FCosaka.html" class="product__card-link">
+              <img class="product__card-img" src="../portfolio/img/product/banner/FCOsaka_banner.png" alt="FC大阪コミュニティバナー">
+              <h4 class="product__card-title">FC大阪コミュニティバナー_ファンへの参加・周知促進バナー</h4>
+              <dl class="product__card-info">
+                <div class="product__card-info-block">
+                  <dt class="product__card-label">【担当領域】</dt>
+                  <dd class="product__card-text">ビジュアル制作</dd>
+                </div>
+              </dl>
+            </a>
+          </article>
+
+          <article>
+            <a href="../portfolio/product-list/banner/banner-PRrelese.html" class="product__card-link">
+              <img class="product__card-img" src="../portfolio/img/product/banner/PRrelese_banner.png" alt="脱炭素AI解析プレスリリース">
+              <h4 class="product__card-title">脱炭素AI解析機能_サービス促進広告バナー</h4>
+              <dl class="product__card-info">
+                <div class="product__card-info-block">
+                  <dt class="product__card-label">【担当領域】</dt>
+                  <dd class="product__card-text">情報・構造設計/ビジュアル制作</dd>
+                </div>
+              </dl>
+            </a>
+          </article>
+
+          <article>
+            <a href="../portfolio/product-list/banner/banner-hairDrier.html" class="product__card-link">
+              <img class="product__card-img" src="../portfolio/img/product/banner/panasonic_banner.png" alt="パナソニック ヘアドライヤーナノケア">
+              <h4 class="product__card-title">パナソニック ヘアドライヤーナノケア_アプリ内ポイント交換リワードバナー</h4>
+              <dl class="product__card-info">
+                <div class="product__card-info-block">
+                  <dt class="product__card-label">【担当領域】</dt>
+                  <dd class="product__card-text">情報・構造設計/ビジュアル制作</dd>
+                </div>
+              </dl>
+            </a>
+          </article>
+
+          <article>
+            <a href="../portfolio/product-list/banner/banner-McDonald.html" class="product__card-link">
+              <img class="product__card-img" src="../portfolio/img/product/banner/McDonald_banner.png" alt="フライドポテト_アプリ内ポイント交換リワードバナー">
+              <h4 class="product__card-title">フライドポテト_アプリ内ポイント交換リワードバナー</h4>
+              <dl class="product__card-info">
+                <div class="product__card-info-block">
+                  <dt class="product__card-label">【担当領域】</dt>
+                  <dd class="product__card-text">情報・構造設計/ビジュアル制作</dd>
+                </div>
+              </dl>
+            </a>
+          </article>
+
+          <article>
             <a href="../portfolio/product-list/banner/banner-foodjar.html" class="product__card-link">
               <img class="product__card-img" src="../portfolio/img/product/banner/foodjar_banner.png" alt="象印 フードジャー">
-              <h4 class="product__card-title">象印 フードジャー_アプリ内ポイント交換リワード</h4>
+              <h4 class="product__card-title">象印 フードジャー_アプリ内ポイント交換リワードバナー</h4>
               <dl class="product__card-info">
                 <div class="product__card-info-block">
                   <dt class="product__card-label">【担当領域】</dt>
@@ -261,7 +293,7 @@
           <article>
             <a href="../portfolio/product-list/banner/banner-vegetables.html" class="product__card-link">
               <img class="product__card-img" src="../portfolio/img/product/banner/vegetables_banner.png" alt="選べる野菜・果物ギフト券">
-              <h4 class="product__card-title">選べる野菜・果物ギフト券_アプリ内ポイント交換リワード</h4>
+              <h4 class="product__card-title">選べる野菜・果物ギフト券_アプリ内ポイント交換リワードバナー</h4>
               <dl class="product__card-info">
                 <div class="product__card-info-block">
                   <dt class="product__card-label">【担当領域】</dt>
@@ -274,7 +306,7 @@
           <article>
             <a href="../portfolio/product-list/banner/banner-tokuten.html" class="product__card-link">
               <img class="product__card-img" src="../portfolio/img/product/banner/tokuten_banner.png" alt="ご紹介特典">
-              <h4 class="product__card-title">ご紹介特典_アプリ内ポイント交換リワード</h4>
+              <h4 class="product__card-title">ご紹介特典_アプリ内ポイント交換リワードバナー</h4>
               <dl class="product__card-info">
                 <div class="product__card-info-block">
                   <dt class="product__card-label">【担当領域】</dt>
@@ -287,20 +319,7 @@
           <article>
             <a href="../portfolio/product-list/banner/banner-syunsoku.html" class="product__card-link">
               <img class="product__card-img" src="../portfolio/img/product/banner/syunsoku_black_banner.png" alt="20th ANNIVERSARY 瞬足">
-              <h4 class="product__card-title">20th ANNIVERSARY 瞬足_商品促進/アプリ内ポイント交換リワード</h4>
-              <dl class="product__card-info">
-                <div class="product__card-info-block">
-                  <dt class="product__card-label">【担当領域】</dt>
-                  <dd class="product__card-text">情報・構造設計/ビジュアル制作</dd>
-                </div>
-              </dl>
-            </a>
-          </article>
-
-          <article>
-            <a href="../portfolio/product-list/banner/banner-PRrelese.html" class="product__card-link">
-              <img class="product__card-img" src="../portfolio/img/product/banner/PRrelese_banner.png" alt="脱炭素AI解析プレスリリース">
-              <h4 class="product__card-title">脱炭素AI解析機能_サービス促進広告</h4>
+              <h4 class="product__card-title">20th ANNIVERSARY 瞬足_商品促進/アプリ内ポイント交換リワードバナー</h4>
               <dl class="product__card-info">
                 <div class="product__card-info-block">
                   <dt class="product__card-label">【担当領域】</dt>
@@ -313,7 +332,7 @@
           <article>
             <a href="../portfolio/product-list/banner/banner-yamamori.html" class="product__card-link">
               <img class="product__card-img" src="../portfolio/img/product/banner/yamamori_banner.png" alt="ヤマモリ 牛肉の薬膳カレー">
-              <h4 class="product__card-title">ヤマモリ 牛肉の薬膳カレー_アプリ内ポイント交換リワード</h4>
+              <h4 class="product__card-title">ヤマモリ 牛肉の薬膳カレー_アプリ内ポイント交換リワードバナー</h4>
               <dl class="product__card-info">
                 <div class="product__card-info-block">
                   <dt class="product__card-label">【担当領域】</dt>
@@ -330,7 +349,6 @@
 
       <!-- アプリUI -->
       <div class="contents" data-category="ui">
-        <h3 class="product__section-title">アプリUI</h3>
 
         <div class="product__card">
 
@@ -406,14 +424,26 @@
 
       <!-- Webサイト -->
       <div class="contents" data-category="web">
-        <h3 class="product__section-title">Webサイト</h3>
 
         <div class="product__card">
 
           <article>
+            <a href="../portfolio/product-list/web/web-actrust.html" class="product__card-link">
+              <img class="product__card-img" src="../portfolio/img/product/web/web_gallery_actrust.png" alt="Actrust-Zero Webサイト">
+              <h4 class="product__card-title">Actrust-Zero Webサイト</h4>
+              <dl class="product__card-info">
+                <div class="product__card-info-block">
+                  <dt class="product__card-label">【担当領域】</dt>
+                  <dd class="product__card-text">情報・構造設計/フロントエンド実装</dd>
+                </div>
+              </dl>
+            </a>
+          </article>
+
+          <article>
             <a href="../portfolio/product-list/web/web-saiyo.html" class="product__card-link">
-              <img class="product__card-img" src="../portfolio/img/product/web/web_gallery_saiyo.png" alt="SPOBY 採用ページ">
-              <h4 class="product__card-title">SPOBY 採用ページ</h4>
+              <img class="product__card-img" src="../portfolio/img/product/web/web_gallery_saiyo.png" alt="SPOBY公式サイト 採用ページ">
+              <h4 class="product__card-title">SPOBY公式サイト 採用ページ</h4>
               <dl class="product__card-info">
                 <div class="product__card-info-block">
                   <dt class="product__card-label">【担当領域】</dt>
@@ -425,21 +455,8 @@
 
           <article>
             <a href="../portfolio/product-list/web/web-news.html" class="product__card-link">
-              <img class="product__card-img" src="../portfolio/img/product/web/web_gallery_news.png" alt="SPOBY ニュース/メディア掲載ページ">
-              <h4 class="product__card-title">SPOBY ニュース/メディア掲載ページ</h4>
-              <dl class="product__card-info">
-                <div class="product__card-info-block">
-                  <dt class="product__card-label">【担当領域】</dt>
-                  <dd class="product__card-text">情報・構造設計/フロントエンド実装</dd>
-                </div>
-              </dl>
-            </a>
-          </article>
-
-          <article>
-            <a href="../portfolio/product-list/web/web-actrust.html" class="product__card-link">
-              <img class="product__card-img" src="../portfolio/img/product/web/web_gallery_actrust.png" alt="Actrust-Zero Webサイト">
-              <h4 class="product__card-title">Actrust-Zero Webサイト</h4>
+              <img class="product__card-img" src="../portfolio/img/product/web/web_gallery_news.png" alt="SPOBY公式サイト ニュース/メディア掲載ページ">
+              <h4 class="product__card-title">SPOBY公式サイト ニュース/メディア掲載ページ</h4>
               <dl class="product__card-info">
                 <div class="product__card-info-block">
                   <dt class="product__card-label">【担当領域】</dt>
