@@ -5,7 +5,7 @@
 .sidebar{
   grid-area: sidebar;
   background-color: var(--color-white-bg);
-  border-radius: var(--border-radius-10);
+  border-radius: 0px 10px 10px 0;
   padding: 10px;
   position: fixed;
   left: 0;
@@ -89,6 +89,7 @@
 .sidebar__filter-btn.active-btn{
   color: var(--color-white-text);
   background-color: var(--color-blue-bg);
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0, 0.25));
 }
 .sidebar__filter-btn.hidden-btn{
   color: var(--color-gray-text);
@@ -125,8 +126,8 @@
 }
 
 .sidebar__filter-btn.active-btn{
-  color: var(--color-blue-text);
-  background-color: var(--color-white-bg);
+  color: var(--color-white-text);
+  background-color: var(--color-blue-bg);
 }
 
 /* カテゴリごとのアイコン */
