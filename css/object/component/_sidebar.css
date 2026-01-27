@@ -89,7 +89,7 @@
 .sidebar__filter-btn.active-btn{
   color: var(--color-white-text);
   background-color: var(--color-blue-bg);
-  filter: drop-shadow(0px 2px 4px rgba(0,0,0, 0.25));
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
 }
 .sidebar__filter-btn.hidden-btn{
   color: var(--color-gray-text);
