@@ -25,10 +25,11 @@
 
 
 /* バナー制作物画像の場合 */
-.about__product-figure--banner{
+.about__product-figure--banner--pcsp-scroll{
   width: 100%;
-  max-width: 100%;
-  display: block;
+  height: auto;
+  max-width: calc(100% - 200px);
+  margin: 0 5px;
 }
 
 
@@ -88,6 +89,10 @@
     scroll-snap-type: x mandatory;
 }
 
+/* バナー制作物画像の場合 */
+.about__product-figure--banner--pcsp-scroll{
+  max-width: calc(100% - 40px);
+}
 
 /* ポスター/チラシ制作物画像（PC・タブレット・スマホサイズ全て横スクロール表示）*/
 .about__product-figure--poster-flyer--pcsp-scroll{
