@@ -1,0 +1,104 @@
+/*-------------------------------------
+//flex 
+--------------------------------------*/
+
+/* PCのみ表示 */
+.u-flex {
+  display: flex;
+}
+
+/* スマホのみ表示 */
+@media(max-width:767px){
+  .u-flex-sp {
+    display: flex;
+  }
+}
+
+/* === Justify Content === */
+
+/* PCのみ表示 */
+.u-justify-between {
+  justify-content: space-between;
+}
+
+.u-justify-center {
+  justify-content: center;
+}
+
+.u-justify-around {
+  justify-content: space-around;
+}
+
+.u-justify-start {
+  justify-content: flex-start;
+}
+
+.u-justify-end {
+  justify-content: flex-end;
+}
+
+.u-justify-evenly {
+  justify-content: space-evenly;
+}
+
+
+/* === Align Items === */
+.u-items-center {
+  align-items: center;
+}
+
+.u-items-start {
+  align-items: flex-start;
+}
+
+.u-items-end {
+  align-items: flex-end;
+}
+
+/* スマホのみ表示 */
+@media(max-width:767px){
+  .u-justify-around-sp {
+    justify-content: space-around;
+  }
+}
+
+
+/* === flex-direction === */
+
+/* PCのみ表示 */
+.u-direction-row {
+  flex-direction: row;
+}
+.u-direction-column {
+  flex-direction: column;
+}
+
+/* スマホのみ表示 */
+@media(max-width:767px){
+  .u-direction-column-sp {
+    flex-direction: column;
+  }
+}
+
+
+/*-------------------------------------
+//br
+--------------------------------------*/
+
+/* PCのみ表示 */
+.u-pc-only {
+  display: inline;
+}
+.u-sp-only {
+  display: none;
+}
+
+/* スマホのみ表示 */
+@media (max-width: 767px) {
+  .u-pc-only {
+    display: none;
+  }
+  .u-sp-only {
+    display: inline;
+  }
+}

@@ -1,0 +1,74 @@
+/* =============================
+   reset.css
+   ============================= */
+
+/* 1. ボックスサイズを統一 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. 余白を初期化 */
+body, h1, h2, h3, h4, h5, h6, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* 3. デフォルトのフォントを統一 */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #3e3e3e;
+  background-color:var(--color-gray-bg);
+}
+
+/* 4. 画像・動画などのメディア要素の扱い */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* 5. フォーム要素の継承とリセット */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 6. リンクの基本 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 7. リストのマーカーを初期化 */
+ul,li,ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 8. テーブルのリセット */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 9. ボタンの見た目を初期化（特にiOS） */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 10. 強調タグなど */
+b, strong {
+  font-weight: bolder;
+}
+
+
