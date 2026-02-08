@@ -1,0 +1,64 @@
+/*-------------------------------------
+//プロフィール
+--------------------------------------*/
+
+/* PC上で見せる時 */
+.profile_pc{
+  grid-area: profile;
+  background-color: var(--color-white-bg);
+  border-radius: var( --border-radius-10);
+  padding: 10px 15px;
+  overflow-y: auto;
+}
+
+@media (max-width: 767px){
+  .profile_pc{
+    display: none;
+  }
+}
+
+/* スマホ上で見せる時 */
+.profile_sp{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  margin: 10px;
+  width: auto;
+  display: none;
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0, .1));
+}
+
+.profile_sp__link{
+  background: #fff;
+  padding: 10px;
+  border-radius: var(--border-radius-100);
+}
+
+/* プロフィールアイコン画像 */
+.profile_sp__img{
+  width: 35px;
+  height: 35px;
+  border-radius: var(--border-radius-100);
+  margin-right: 10px;
+}
+
+/* プロフィール名 */
+.profile_sp__subtitle{
+  font-size: .4rem;
+  color: var( --color-whitegray-text);
+}
+.profile_sp__title{
+  font-size: .6rem;
+}
+
+@media (max-width: 767px){
+  .profile_sp{
+    display: block;
+  }
+}
+
+
+/*-------------------------------------
+//プロフィール詳細
+--------------------------------------*/
