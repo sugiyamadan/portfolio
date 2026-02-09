@@ -1,0 +1,49 @@
+/*-------------------------------------
+//コンテンツの表示・非表示
+--------------------------------------*/
+.contents {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.contents.active {
+  display: block;
+  opacity: 1;
+}
+
+.contents.hidden {
+  display: none;
+  opacity: 0;
+}
+
+
+@media (max-width: 767px){
+
+  .contents.active {
+    margin-bottom: 120px;
+  }
+}
+
+
+/*-------------------------------------
+//PC・SPごとに画像の表示・非表示切り替え
+--------------------------------------*/
+
+.pc__img{
+  display: block;
+}
+
+.sp__img{
+  display: none;
+}
+
+@media (max-width: 767px){
+  .pc__img{
+    display: none;
+  }
+  
+  .sp__img{
+    display: block;
+  }
+}
