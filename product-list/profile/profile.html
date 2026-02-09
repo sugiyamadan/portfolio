@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../css/object/component/_sidebar.css">
   <link rel="stylesheet" href="../../css/object/utility/_utility.css">
   <link rel="stylesheet" href="../../css/object/component/_about.css">
+  <link rel="stylesheet" href="../../css/object/component/_profile.css">
 
   <!-- favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="../../img/icon/favicon.png">
@@ -22,7 +23,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
-<body style="background-color: #fff;">
+<body>
 
   <div class="grid__detail-container">
 
@@ -110,14 +111,200 @@
 
     <main class="about">
 
-      <article class="about__product">
-        <div>
-          <!-- 制作物画像 -->
-          <figure>
-            <img src="../../img/profile/profile.jpg" alt="SPOBY リワード一覧画面 UI改善" class="about__product-figure--profile">
-          </figure>
+        <!-- PCで見せる時のプロフィール -->
+        <div class="profile">
+          <img class="profile__icon profile__m-M" src="../../img/icon/profile_icon.jpg" alt="プロフィール写真">
+
+          <!-- プロフィール情報 -->
+          <section aria-labelledby="profile__heading" class="profile__m-L">
+            <div class="profile__m-M">
+              <h2 class="profile__name-ja">杉山 大貴</h2>
+              <small class="profile__name-en">DAIKI SUGIYAMA</small>
+            </div>
+
+            <dl class="profile__m-M">
+              <div class="profile__meta">
+                <dt class="profile__meta-label">生年月日</dt>
+                <dd class="profile__meta-value"><time datetime="1998-08-10">1998/08/10</time></dd>
+              </div>
+
+              <div class="profile__meta">
+                <dt class="profile__meta-label">居住地</dt>
+                <dd class="profile__meta-value">東京都在住</dd>
+              </div>
+            </dl>
+          </section>
+
+          <!-- ソフトスキル情報 -->
+          <section class="profile__m-L">
+
+            <div class="profile__m-M">
+              <h3 class="profile__title">ソフトスキル</h2>
+            </div>
+
+            <dl>
+              <div class="u-flex u-items-center u-wrap profile__soft-skill">
+
+                <!-- Illustrator -->
+                <div class="u-flex u-items-center">
+                  <dt class="profile__soft-icon-adobe"><img src="../../img/icon/ai_icon.png" alt="Illustrator"></dt>
+                  <dd>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                  </dd>
+                </div>
+
+                <!-- Photoshop -->
+                <div class="u-flex u-items-center">
+                  <dt class="profile__soft-icon-adobe"><img src="../../img/icon/ps_icon.png" alt="フォトショップ"></dt>
+                  <dd>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                  </dd>
+                </div>
+
+                <!-- XD -->
+                <div class="u-flex u-items-center">
+                  <dt class="profile__soft-icon-adobe"><img src="../../img/icon/xd_icon.png" alt="XD"></dt>
+                  <dd>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                  </dd>
+                </div>
+
+                <!-- Figma -->
+                <div class="u-flex u-items-center">
+                  <dt class="profile__soft-icon-figma"><img src="../../img/icon/figma_icon.png" alt="Figma"></dt>
+                  <dd>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                  </dd>
+                </div>
+
+                <!-- AfterEffects -->
+                <div class="u-flex u-items-center">
+                  <dt class="profile__soft-icon-adobe"><img src="../../img/icon/ae_icon.png" alt="AfterEffects"></dt>
+                  <dd>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                  </dd>
+                </div>
+
+                <!-- PremiumPro -->
+                <div class="u-flex u-items-center">
+                  <dt class="profile__soft-icon-adobe"><img src="../../img/icon/pr_icon.png" alt="PremiumPro"></dt>
+                  <dd>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                  </dd>
+                </div>
+
+                <!-- HTML -->
+                <div class="u-flex u-items-center">
+                  <dt class="profile__soft-icon-lang"><img src="../../img/icon/html_icon.png" alt="HTML"></dt>
+                  <dd>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                  </dd>
+                </div>
+
+                <!-- CSS -->
+                <div class="u-flex u-items-center">
+                  <dt class="profile__soft-icon-lang"><img src="../../img/icon/css_icon.png" alt="CSS"></dt>
+                  <dd>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                  </dd>
+                </div>
+
+                <!-- Javascript -->
+                <div class="u-flex u-items-center">
+                  <dt class="profile__soft-icon-lang"><img src="../../img/icon/js_icon.png" alt="Javascript"></dt>
+                  <dd>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__blue-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                    <span class="profile__gray-cicle"></span>
+                  </dd>
+                </div>
+
+              </div>
+            </dl>
+
+          </section>
+
+          <!-- 趣味・好きなもの -->
+          <section class="profile__m-L">
+
+            <div class="profile__m-M">
+              <h3 class="profile__title">趣味・好きなこと</h2>
+            </div>
+
+            <dl>
+              <div class="profile__favorites profile__m-M">
+                <dt class="profile__favorites-title profile__m-S">スポーツ・運動</dt>
+                <dd class="profile__favorites-ditails">迷いや悩みを感じたときに体を動かすことで思考が整理され、気持ちを切り替えて前向きに考えられるようになるからです。</dd>
+              </div>
+
+              <div class="profile__meta profile__m-M">
+                <dt class="profile__favorites-title profile__m-S">アニメ（宇宙兄弟）</dt>
+                <dd class="profile__favorites-ditails">大切な考え方や姿勢を学べる作品で、迷いや不安を感じたときに前向きな一歩を踏み出す勇気をくれるからです。</dd>
+              </div>
+            </dl>
+
+          </section>
+
+
+
+          <!-- これまでのキャリア -->
+          <section class="profile__m-L">
+
+            <div class="profile__m-M">
+              <h3 class="profile__title">これまでのキャリア</h2>
+            </div>
+
+            <dl>
+              <div class="profile__career profile__m-M">
+                <small class="profile__career-meta">2021/3 ~ 2025/11</small>
+                <dt class="profile__career-title profile__m-S">株式会社スタジオスポビー</dt>
+                <dd class="profile__career-ditails">
+                  <p class="profile__m-M">株式会社スタジオスポビーにてデザイナーとして約5年勤務。グラフィックデザイン・Webデザイン・UIデザインと幅広くデザイン業務を担当し、目的・ゴールに基づいた設計からデザイン制作まで実装してきました。</p>
+                  <p class="profile__m-M">【Webサイト制作】<br>Webサイト制作において、目的・ゴールに基づいた情報・構造設計をチームと連携しながら行い、デザイン制作からコーディングまで一貫して担当していました。また、Webサイト全体の再利用性・保守性を考慮したコンポーネント設計が不十分であった課題に対し、設計の見直しと改善を行いました
+                  <p class="profile__m-M">【グラフィック制作】<br>グラフィック制作において、「誰が・どこで・どのような目的で使用するか」を踏まえ、必要な情報整理や見せ方を設計した上で、ポスター・チラシ・パンフレット・バナーなどの制作を担当していました。
+                  <p class="profile__m-M">【アプリ制作】<br>アプリ制作において、各画面・導線ごとの目的を整理した上で、情報・構造設計をPMやエンジニアと連携しながら実施し、設計からUIデザイン制作まで一貫して担当していました。また、ユーザーへのヒアリングを通じて抽出した課題をもとに、既存画面の導線や操作性の改善にも携わっていました。
+                  </p>
+                </dd>
+              </div>
+            </dl>
+
+          </section>
+
         </div>
-      </article>
 
     </main>
   </div>
