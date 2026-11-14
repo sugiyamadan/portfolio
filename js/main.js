@@ -58,7 +58,22 @@ function categoryTab(){
     }
 }
 
-categoryTab();
+async function initializePage() {
+    try {
+      // サイドバーのHTML読み込み完了を待つ
+      await window.sidebarReady;
+  
+      // カテゴリー切り替え機能を初期化
+      categoryTab();
+  
+    } catch (error) {
+      console.error("初期化エラー:", error);
+    }
+  }
+  
+  initializePage();
+
+
 
 
 // 詳細ページに遷移した場合、そのリンク先のURLに「category = 〇〇」と語尾に付く
