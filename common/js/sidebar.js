@@ -1,23 +1,24 @@
+
 async function loadSidebar() {
   const target = document.querySelector("#common-sidebar");
-
   if (!target) return;
 
   try {
-    const response = await fetch("https://daiki-sugiyama.com/common/html/sidebar.html");
+    const response = await fetch("/common/sidebar.html");
 
     if (!response.ok) {
-      throw new Error("サイドバーの読み込みに失敗しました");
+      throw new Error(`読み込み失敗: ${response.status}`);
     }
 
     target.innerHTML = await response.text();
 
-    // 読み込み完了を通知
-    document.dispatchEvent(new Event("sidebarLoaded"));
+    console.log("サイドバー読み込み完了");
 
   } catch (error) {
-    console.error(error);
+    console.error("サイドバー読み込みエラー:", error);
+    throw error;
   }
 }
 
-loadSidebar();
+// 読み込み完了を他のJSから待てるようにする
+window.sidebarReady = loadSidebar();
