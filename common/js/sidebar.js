@@ -4,7 +4,7 @@ async function loadSidebar() {
   if (!target) return;
 
   try {
-    const response = await fetch("/common/sidebar.html");
+    const response = await fetch("/common/js/sidebar.html");
 
     if (!response.ok) {
       throw new Error("サイドバーの読み込みに失敗しました");
