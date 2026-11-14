@@ -4,7 +4,7 @@ async function loadSidebar() {
   if (!target) return;
 
   try {
-    const response = await fetch("https://daiki-sugiyama.com/common/js/sidebar.html");
+    const response = await fetch("https://daiki-sugiyama.com/common/html/sidebar.html");
 
     if (!response.ok) {
       throw new Error("サイドバーの読み込みに失敗しました");
