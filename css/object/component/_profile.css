@@ -58,11 +58,9 @@
 //共通
 --------------------------------------*/
 
-/* プロフィール内の項目ごとの幅 */
-
 /* 大項目 */
 .profile__m-L{
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /* 中項目 */
@@ -75,65 +73,55 @@
   margin-bottom: 8px;
 }
 
-
-/* 項目ごとのタイトル */
-.profile__title{
-  font-size: .9rem;
-  letter-spacing: var(--letter-spacing-M);
-}
-.profile__title::before{
-  content: "";
+/* 詳細情報 */
+.profile__ditails{
   display: inline-block;
-  height: 1.1rem;
-  width: 4px;
-  vertical-align: -0.2rem;
-  background-color: var(--color-blue-bg);
-  margin-right: 5px;
-  border-radius: var(--border-radius-10);
-}
-
-
-/*-------------------------------------
-//プロフィール詳細
---------------------------------------*/
-
-/* プロフィール写真 */
-.profile__icon{
-  border-radius: var(--border-radius-20);
-}
-
-/* プロフィール名前 */
-.profile__name-ja{
-  font-size: 2rem;
-  line-height: var(--line-height-XS);
-}
-.profile__name-en{
   font-size: .7rem;
-  letter-spacing: var(--letter-spacing-L);
-  color: var(--color-whitegray-text);
+  letter-spacing: var(--letter-spacing-S);
+  line-height: var(--line-height-L);
 }
 
-
-/* プロフィール情報 */
-.profile__meta{
-  line-height: var(--line-height-S);
+/* キャッチコピー */
+.profile__copy{
+  font-size: 1.5rem;
+  line-height: var(--line-height-M);
+  color: var(--color-blue-text);
 }
 
+/* ラベル情報 */
 .profile__meta-label{
   display: inline-block;
   font-size: .7rem;
   letter-spacing: var(--letter-spacing-S);
-}
-.profile__meta-label::after{
-  content: ":";
-  padding: 0 3px;
-}
-.profile__meta-value{
-  display: inline-block;
-  font-size: .7rem;
-  letter-spacing: var(--letter-spacing-S);
+  color: var(--color-whitegray-text);
 }
 
+/* リスト表示 */
+.profile__list{
+  list-style:disc;
+  margin-left: 10px;
+  display: list-item;
+}
+
+
+/*-------------------------------------
+//VALUE - できること・提供価値
+--------------------------------------*/
+
+/* できること・提供価値 */
+.profile__value-title{
+  font-size: .9rem;
+  line-height: var(--line-height-M);
+  color: var(--color-blue-text);
+}
+
+/* 背景色 */
+.profile__value-bg{
+  font-size: .9rem;
+  background: var(--color-gray-bg);
+  border-radius: var(--border-radius-5);
+  padding: 10px;
+}
 
 
 /*-------------------------------------
@@ -198,27 +186,4 @@
   font-size: .8rem;
   letter-spacing: var(--letter-spacing-S);
   line-height: var(--line-height-M);
-}
-
-
-/*-------------------------------------
-//これまでのキャリア
---------------------------------------*/
-
-.profile__career-meta{
-  display: block;
-  font-size: .7rem;
-  color: var(--color-whitegray-text);
-  letter-spacing: var(--letter-spacing-XS);
-}
-.profile__career-title{
-  display: inline-block;
-  font-size: .8rem;
-  letter-spacing: var(--letter-spacing-S);
-}
-.profile__career-ditails{
-  display: inline-block;
-  font-size: .7rem;
-  letter-spacing: var(--letter-spacing-S);
-  line-height: var(--line-height-L);
 }
