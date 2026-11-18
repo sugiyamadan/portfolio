@@ -105,6 +105,25 @@
 
 
 /*-------------------------------------
+//自己紹介
+--------------------------------------*/
+.profile__icon{
+  border-radius: var(--border-radius-10);
+  width: 100%;
+}
+
+.profile__name-ja{
+  font-size: 2rem;
+  letter-spacing: var(--letter-spacing-S);
+}
+
+.profile__name-en{
+  font-size: .8rem;
+  letter-spacing: var(--letter-spacing-S);
+}
+
+
+/*-------------------------------------
 //VALUE - できること・提供価値
 --------------------------------------*/
 
